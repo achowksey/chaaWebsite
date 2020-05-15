@@ -1,0 +1,81 @@
+#image {
+  display: block;
+  filter: blur(3px);
+  opacity: .8;
+}
+
+.thumbnail {
+  position: relative;
+  display: inline-block;
+}
+
+.caption {
+  position: absolute;
+  font-family: Trebuchet, sans-serif;
+  top: 65%;
+  left: 50%;
+  font-size: 525%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+.theTeam{
+  left: 50%;
+  font-size: 525%;
+  color: black;
+  text-align: center;
+  font-family: Trebuchet, sans-serif;
+}
+
+.text-dark{
+  font-size: 90%;
+  font-family: Helvetica;
+}
+
+.about{
+  left: 50%;
+  font-size: 300%;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.aboutContainer{
+  display: inline-block;
+  margin-left: 12.5%;
+  width: 75%; 
+  font-size: 110%;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+.card-body{
+  color: black;
+}
+
+.slide-container {
+  width: 70%;
+  margin: auto; }
+
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 700px;
+}
+
+.each-slide span {
+  position: relative;
+  right: 390px;
+  bottom: 305px;
+  font-family: 'Gill Sans', sans-serif;
+  font-style: oblique;
+  padding: 10px;
+  font-size: 40px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
