@@ -36,8 +36,26 @@ export default class Members extends Component {
     render(){
         return( 
             <div> 
+                <hr></hr>
+                <h2 className = "theTeam">CHAAHAT IV</h2>
+                <hr></hr>
+                <div id="container">
+                    <div id="box-search">
+                        <div className="thumbnail">
+                            <img id = "image2"
+                                alt=""
+                                src={formal}
+                                width="1416"
+                                height="743.21"
+                            />
+                        </div>
+                    </div>
+                </div>
                 <br></br>
-                <h1 className = "theTeam">PAST TEAMS</h1>
+                <br></br>
+                <br></br>
+                <hr></hr>
+                <h2 className = "theTeam">PAST TEAMS</h2>
                 <hr></hr>
                 <br></br>
                  <div className = "slide-container">
@@ -84,6 +102,10 @@ export default class Members extends Component {
                         </div>
                     </Slide>
                     </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>  
         )
     }

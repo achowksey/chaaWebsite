@@ -1,7 +1,10 @@
 #image {
   display: block;
-  filter: blur(3px);
-  opacity: .8;
+  /* filter: blur(2px); */
+}
+
+#image2 {
+  display: block;
 }
 
 .thumbnail {
@@ -11,10 +14,22 @@
 
 .caption {
   position: absolute;
-  font-family: Trebuchet, sans-serif;
-  top: 65%;
+  font-family: sans-serif;
+  top: 27%;
   left: 50%;
-  font-size: 525%;
+  font-size: 520%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+  color: white;
+  font-weight: 300;
+}
+
+.motto {
+  position: absolute;
+  font-family: "Gill Sans", sans-serif;
+  top: 40%;
+  left: 50%;
+  font-size: 225%;
   transform: translate( -50%, -50% );
   text-align: center;
   color: white;
@@ -23,7 +38,7 @@
 
 .theTeam{
   left: 50%;
-  font-size: 525%;
+  font-size: 400%;
   color: black;
   text-align: center;
   font-family: Trebuchet, sans-serif;
@@ -43,8 +58,8 @@
 
 .aboutContainer{
   display: inline-block;
-  margin-left: 12.5%;
-  width: 75%; 
+  margin-left: 15%;
+  width: 70%; 
   font-size: 110%;
   text-align: center;
   font-family: Helvetica;
@@ -71,11 +86,35 @@
   position: relative;
   right: 390px;
   bottom: 305px;
-  font-family: 'Gill Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-style: oblique;
   padding: 10px;
   font-size: 40px;
-  background: rgba(255, 255, 255, 0.2);
+  font-style: bold;
+  background: rgba(255, 255, 255, 0.1);
 }
 
+.videos{
+  display: flex;
+  justify-content: center;
+}
 
+#vidContainer{
+  text-align: center;
+  font-size: 125%;
+}
+
+#performText{
+  text-align: center;
+  font-size: 300%;
+  font-family: Trebuchet, sans-serif;
+}
+
+.faIcons{
+  font-size: 12px;
+  margin-bottom: 1.4%;
+}
+
+#bigCon{
+  border: 12px solid rgb(80,0,0);
+}

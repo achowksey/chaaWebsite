@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faCircle } from '@fortawesome/free-solid-svg-icons'
 import { Slide } from 'react-slideshow-image';
 import Logo from './diwali.jpg';
 import pic1 from './album/circle.jpeg';
@@ -6,7 +8,7 @@ import pic2 from './album/christmas.JPG';
 import pic3 from './album/ADZ.jpg';
 import pic4 from './album/mixer.jpeg'
 import pic5 from './album/giselle.jpg';
-import pic6 from './album/formal.jpeg';
+import pic6 from './album/formal.JPG';
 import pic7 from './album/jazba.JPG';
 import pic8 from './album/soraya.jpg';
 import pic9 from './album/wall.jpg';
@@ -45,15 +47,19 @@ export default class Homepage extends Component {
                             <img id = "image"
                                 alt=""
                                 src={Logo}
-                                width="1440"
-                                height="635.21"
+                                width="1416"
+                                height="624.78"
                             />
                             <div className="caption">
                                 <p>WASHU CHAAHAT</p>
                             </div>
+                            <div className="motto">
+                                <p><FontAwesomeIcon icon={faCircle} color = "white" className="faIcons"/> PASSION DON'T QUIT <FontAwesomeIcon icon={faCircle} color = "white" className="faIcons"/></p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -112,7 +118,6 @@ export default class Homepage extends Component {
                         </div>
                     </Slide>
                     </div>
-                <br></br>
                 <br></br>
                 <br></br>
                 <br></br>

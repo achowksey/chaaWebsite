@@ -14,15 +14,17 @@ import Footer from "./components/footer.component";
 function App() {
 
   return (
-    <Router>
-        <Navbar2/>
-        <Route exact path="/" component={Homepage} />
-        <Route exact path="/members" component={Members} />
-        <Route exact path="/performances" component={Performances} />
-        <Route exact path="/join" component={Join} />
-        <Route exact path="/contactus" component={Contact} />
-        <Footer />
-    </Router>
+      <Router>
+        <div id ="bigCon">
+          <Navbar2/>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/members" component={Members} />
+          <Route exact path="/performances" component={Performances} />
+          <Route exact path="/join" component={Join} />
+          <Route exact path="/contactus" component={Contact} />
+          <Footer />
+        </div>
+      </Router>
   );
 }
 

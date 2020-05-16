@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './chaaLogo.jpeg';
-import { Navbar, Nav, NavDropdown,} from 'react-bootstrap';
+import { Navbar, Nav,} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook,faInstagram } from '@fortawesome/free-brands-svg-icons' 
 
