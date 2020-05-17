@@ -7,13 +7,13 @@ import { faFacebook,faInstagram } from '@fortawesome/free-brands-svg-icons'
 export default class Navbar2 extends Component {
     render(){ 
         return(
-            <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="transparent">
                 <Navbar.Brand href="/">
                     <img
                         alt=""
                         src={Logo}
-                        width="60"
-                        height="50"
+                        width="25%"
+                        height="25%"
                         className="d-inline-block align-top"
                     />
                 </Navbar.Brand>
