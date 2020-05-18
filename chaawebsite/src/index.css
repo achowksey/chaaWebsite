@@ -1,7 +1,113 @@
-/* .thumbnail {
+/* Main Text Headings  - Used in Homepage/Members/Performances/Join/Contact */
+.headingsText{
+  text-align: center;
+  font-size: 5.5vw;
+  font-family: 'Mukta';
+  color: black;
+}
+
+/* Wrapper For Image Carousels - Used in Homepage/Members */
+.carouselWrapper{
   position: relative;
+  left: 15%;
+  width: 70%;
+  border: 0.075em solid rgb(75,0,0);
+}
+
+/* Wrappers For Main Images - Used in Members/Join */
+.membersJoinWrapper{
+  margin-left: 10%;
+  width: 80%;
+  font-family: 'Mukta';
+  border: 0.075em solid rgb(75,0,0);
+}
+
+/* App */
+#bigCon{
+  border: .25em solid rgb(75,0,0);
+}
+
+/* Navbar */
+.text-dark{
+  font-size: 90%;
+  font-family: 'Mukta';
+}
+
+/* Homepage */
+.imageWrapper{
+  width: 100%;
+}
+
+.aboutContainer{
   display: inline-block;
-} */
+  margin-left: 15%;
+  width: 70%; 
+  font-size: 110%;
+  text-align: left;
+  font-family: 'Mukta';
+}
+
+/* Members */
+.membersClassesNames{
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.membersClasses{
+  text-align: center;
+  font-size: 2vw;
+  text-decoration: underline;
+}
+
+.overlay{
+  text-align: center;
+  font-family: 'Mukta';
+  margin-bottom: 0;
+  font-size: 2.5vw;
+  color:black;
+  background-color: white;
+}
+
+/* Performances */
+#vidContainer{
+  text-align: center;
+  font-size: 2vw;
+}
+
+.borderWrap{
+  border: 0.075em solid rgb(75,0,0);
+  margin-left: 15%;
+  width: 70%; 
+}
+
+.videos{
+  display: flex;
+  justify-content: center;
+}
+
+/* Join */
+.tryoutsText{
+  text-align: center;
+  font-size: 3vw;
+}
+
+/* Contact */
+.contactForm{
+  margin-left: 15%;
+  width: 70%;
+  font-family: 'Mukta';
+}
+
+#contactText{
+  font-family: 'Mukta';
+  font-size: 125%;
+}
+
+/* footer */
+.card-body{
+  color: black;
+}
+
 
 /* .caption {
   width: 100%;
@@ -27,129 +133,3 @@
   color: white;
   font-weight: 300;
 } */
-
-.imageWrapper{
-  width: 100%;
-}
-
-.text-dark{
-  font-size: 90%;
-  font-family: 'Mukta';
-}
-
-.aboutContainer{
-  display: inline-block;
-  margin-left: 15%;
-  width: 70%; 
-  font-size: 110%;
-  text-align: center;
-  font-family: 'Mukta';
-}
-
-.card-body{
-  color: black;
-}
-
-/* .slide-container {
-  width: 70%;
-  margin: auto; }
-
-
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 700px;
-  width: 1000px;
-}
-
-.each-slide span {
-  position: relative;
-  right: 390px;
-  bottom: 305px;
-  font-family: 'Mukta';
-  font-style: oblique;
-  padding: 10px;
-  font-size: 40px;
-  font-style: bold;
-  background: rgba(255, 255, 255, 0.1);
-} */
-
-.videos{
-  display: flex;
-  justify-content: center;
-}
-
-#vidContainer{
-  text-align: center;
-  font-size: 2vw;
-}
-
-.headingsText{
-  text-align: center;
-  font-size: 5vw;
-  font-family: 'Mukta';
-}
-
-.faIcons{
-  font-size: .3em;
-  margin-bottom: 1.6%;
-}
-
-#bigCon{
-  border: .25em solid rgb(80,0,0);
-}
-
-#wrapper{
-  position: relative;
-  left: 15%;
-  width: 70%;
-  height: 100%;
-}
-
-.overlay{
-  text-align: center;
-  font-family: 'Mukta';
-  margin-bottom: 0;
-  font-size: 2.5vw;
-  color: black;
-  background-color: white;
-  border: 0.075em solid rgb(80,0,0);
-}
-
-.borderWrap{
-  border: 0.075em solid rgb(80,0,0);
-  margin-left: 15%;
-  width: 70%; 
-  text-decoration: underline;
-}
-
-.contactForm{
-  margin-left: 15%;
-  width: 70%;
-  font-family: 'Mukta';
-}
-
-#contactText{
-  font-family: 'Mukta';
-  font-size: 150%;
-}
-
-#membersWrapper{
-  margin-left: 10%;
-  width: 80%;
-  font-family: 'Mukta';
-  border: 0.075em solid rgb(80,0,0);
-}
-
-.membersClassesNames{
-  text-align: center;
-  font-size: 1.5vw;
-}
-
-.membersClasses{
-  text-align: center;
-  font-size: 2vw;
-  text-decoration: underline;
-}

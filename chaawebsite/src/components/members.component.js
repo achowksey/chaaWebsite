@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-// import { Slide } from 'react-slideshow-image';
-// import formal from './profPic.JPG';
-import pic1 from './pastTeams/1.jpg';
-import pic2 from './pastTeams/2.jpg';
-import pic3 from './pastTeams/3.jpg';
-import pic4 from './pastTeams/4.jpg';
-import pic5 from './pastTeams/5.jpg';
-import pic6 from './pastTeams/6.jpg';
-import pic7 from './pastTeams/7.jpg';
-import pic8 from './pastTeams/8.jpg';
-import pic9 from './pastTeams/9.JPG';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import pic1 from './photos/members/1.jpg';
+import pic2 from './photos/members/2.jpg';
+import pic3 from './photos/members/3.jpg';
+import pic4 from './photos/members/4.jpg';
+import pic5 from './photos/members/5.jpg';
+import pic6 from './photos/members/6.JPG';
+import pic7 from './photos/members/7.jpg';
+import pic8 from './photos/members/8.jpg';
+import pic9 from './photos/members/9.JPG';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import RenderSmoothImage from 'render-smooth-image-react';
 import 'render-smooth-image-react/build/style.css';
@@ -22,7 +20,7 @@ const valuesGroupId = 'Values';
 const getConfigurableProps = () => ({
     showArrows: boolean('showArrows', true, tooglesGroupId),
     showStatus: boolean('showStatus', false, tooglesGroupId),
-    showIndicators: boolean('showIndicators', true, tooglesGroupId),
+    showIndicators: boolean('showIndicators', false, tooglesGroupId),
     infiniteLoop: boolean('infiniteLoop', true, tooglesGroupId),
     showThumbs: boolean('showThumbs', true, tooglesGroupId),
     useKeyboardArrows: boolean('useKeyboardArrows', true, tooglesGroupId),
@@ -47,19 +45,7 @@ export default class Members extends Component {
                 <hr></hr>
                 <div className = "headingsText"> MEET THE TEAM </div>
                 <hr></hr>
-                {/* <div>
-                    <div>
-                        <div>
-                            <img
-                                alt=""
-                                src={formal}
-                                width="100%"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <br></br> */}
-                <div id = "membersWrapper">
+                <div className = "membersJoinWrapper">
                     <p className="overlay">CHAAHAT 2019-2020</p>
                     <RenderSmoothImage
                         alt=""
@@ -86,39 +72,39 @@ export default class Members extends Component {
                 <div className = "headingsText"> THROUGH THE YEARS </div>
                 <hr></hr>
                 <br></br>
-                <div id = "wrapper">
+                <div className = "carouselWrapper">
                     <Carousel {...getConfigurableProps()}>
                         <div>
                             <div className="overlay">CHAAHAT 2011-2012</div>
-                            <RenderSmoothImage alt="" src={pic1} />
+                            <img alt="" src={pic1} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2012-2013</div>
-                            <RenderSmoothImage alt="" src={pic2} />
+                            <img alt="" src={pic2} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2013-2014</div>
-                            <RenderSmoothImage alt="" src={pic3} />
+                            <img alt="" src={pic3} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2014-2015</div>
-                            <RenderSmoothImage alt="" src={pic4} />
+                            <img alt="" src={pic4} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2015-2016</div>
-                            <RenderSmoothImage alt="" src={pic5} />
+                            <img alt="" src={pic5} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2016-2017</div>
-                            <RenderSmoothImage alt="" src={pic6} />
+                            <img alt="" src={pic6} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2017-2018</div>
-                            <RenderSmoothImage alt="" src={pic7} />
+                            <img alt="" src={pic7} />
                         </div>
                         <div>
                             <div className="overlay">CHAAHAT 2018-2019</div>
-                            <RenderSmoothImage alt="" src={pic8} />
+                            <img alt="" src={pic8} />
                         </div>
                         {/* <div>
                             <div className="overlay">CHAAHAT 2019-2020</div>
@@ -126,50 +112,6 @@ export default class Members extends Component {
                         </div> */}
                     </Carousel>
                 </div>
-                 {/* <div className = "slide-container">
-                    <Slide {...properties}>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
-                                <span>CHAAHAT I</span>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
-                                <span>CHAAHAT II</span>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-                                <span>CHAAHAT III</span>  
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[3]})`}}>
-                                <span>CHAAHAT IV</span>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[4]})`}}>
-                                <span>CHAAHAT V</span>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[5]})`}}>
-                                <span>CHAAHAT VI</span>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[6]})`}}>
-                                <span>CHAAHAT VII</span>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[7]})`}}>
-                                <span>CHAAHAT VIII</span>
-                            </div>
-                        </div>
-                    </Slide>}
-                    {/* </div> */}
                 <br></br>
                 <br></br>
             </div>  

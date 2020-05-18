@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {faCircle } from '@fortawesome/free-solid-svg-icons'
-// import { Slide } from 'react-slideshow-image';
-import Logo from './diwali.jpeg';
-import pic1 from './album/circle.jpeg';
-import pic2 from './album/christmas.JPG';
-import pic3 from './album/ADZ.jpg';
-import pic4 from './album/mixer.jpeg'
-import pic5 from './album/giselle.jpg';
-import pic6 from './album/formal.JPG';
-import pic7 from './album/jazba.JPG';
-import pic8 from './album/soraya.jpg';
-import pic9 from './album/wall.jpg';
-import pic10 from './album/offcampus.jpeg';
+import main from './photos/homepage/diwali.jpeg';
+import pic1 from './photos/homepage/circle.jpeg';
+import pic2 from './photos/homepage/christmas.JPG';
+import pic3 from './photos/homepage/ADZ.jpg';
+import pic4 from './photos/homepage/mixer.jpeg'
+import pic5 from './photos/homepage/giselle.jpg';
+import pic6 from './photos/homepage/formal.JPG';
+import pic7 from './photos/homepage/jazba.JPG';
+import pic8 from './photos/homepage/soraya.jpg';
+import pic9 from './photos/homepage/wall.jpg';
+import pic10 from './photos/homepage/offcampus.jpeg';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import RenderSmoothImage from 'render-smooth-image-react';
@@ -25,7 +22,7 @@ const valuesGroupId = 'Values';
 const getConfigurableProps = () => ({
     showArrows: boolean('showArrows', true, tooglesGroupId),
     showStatus: boolean('showStatus', false, tooglesGroupId),
-    showIndicators: boolean('showIndicators', true, tooglesGroupId),
+    showIndicators: boolean('showIndicators', false, tooglesGroupId),
     infiniteLoop: boolean('infiniteLoop', true, tooglesGroupId),
     showThumbs: boolean('showThumbs', true, tooglesGroupId),
     useKeyboardArrows: boolean('useKeyboardArrows', true, tooglesGroupId),
@@ -40,50 +37,16 @@ const getConfigurableProps = () => ({
     transitionTime: number('transitionTime', 300, {}, valuesGroupId),
     swipeScrollTolerance: number('swipeScrollTolerance', 5, {}, valuesGroupId),
 });
- 
-// const slideImages = [
-//     pic1,
-//     pic2,
-//     pic3,
-//     pic4,
-//     pic5,
-//     pic6,
-//     pic7,
-//     pic8,
-//     pic9,
-//     pic10
-//   ];
-
-//   const images = [{ source: './album/circle.jpeg' }, { source: '/album/christmas.JPG' }];
-
-//   const properties = {
-//     duration: 3000,
-//     transitionDuration: 500,
-//     infinite: true,
-//     indicators: true,
-//     scale: 0.4,
-//     arrows: true
-//   }
   
 export default class Homepage extends Component {
     render(){
         return( 
             <div> 
-                <div>
-                    <div>
-                        <div className = "imageWrapper">
-                            <RenderSmoothImage
-                                alt=""
-                                src={Logo}
-                            />
-                            {/* <div className="caption">
-                                <p>WASHU CHAAHAT</p>
-                            </div>
-                            <div className="motto">
-                                <p><FontAwesomeIcon icon={faCircle} color = "white" className="faIcons"/> PASSION DON'T QUIT <FontAwesomeIcon icon={faCircle} color = "white" className="faIcons"/></p>
-                            </div> */}
-                        </div>
-                    </div>
+                <div className = "imageWrapper">
+                    <RenderSmoothImage
+                        alt=""
+                        src={main}
+                    />
                 </div>
                 <br></br>
                 <br></br>
@@ -99,84 +62,40 @@ export default class Homepage extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
-                <div id = "wrapper">
+                <div className = "carouselWrapper">
                     <Carousel {...getConfigurableProps()}>
                         <div>
-                            <RenderSmoothImage alt="" src={pic1} />
+                            <img alt="" src={pic1} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic2} />
+                            <img alt="" src={pic2} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic3} />
+                            <img alt="" src={pic3} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic4} />
+                            <img alt="" src={pic4} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic5} />
+                            <img alt="" src={pic5} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic6} />
+                            <img alt="" src={pic6} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic7} />
+                            <img alt="" src={pic7} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic8} />
+                            <img alt="" src={pic8} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic9} />
+                            <img alt="" src={pic9} />
                         </div>
                         <div>
-                            <RenderSmoothImage alt="" src={pic10} />
+                            <img alt="" src={pic10} />
                         </div>
                     </Carousel>
                     </div>
-                    {/* <div className = "slide-container">
-                    <Slide {...properties}>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[3]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[4]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[5]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[6]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[7]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[8]})`}}>
-                            </div>
-                        </div>
-                        <div className="each-slide">
-                            <div style={{'backgroundImage': `url(${slideImages[9]})`}}>
-                            </div>
-                        </div>
-                    </Slide>
-                    </div> */}
                 <br></br>
                 <br></br>
             </div>  
